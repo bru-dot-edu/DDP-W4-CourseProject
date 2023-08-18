@@ -1,0 +1,48 @@
+---
+title: "Shiny Application and Reproducible Pitch"
+author: "Chris Brueck"
+date: "`r Sys.Date()`"
+output: ioslides_presentation
+---
+
+
+
+
+## Course Project Description
+
+This is the final course project for the Developing Data Products Coursera course
+
+    Write a shiny application with associated supporting documentation. The documentation should be thought of as whatever a user will need to get started using your application.
+
+    Deploy the application on Rstudio's shiny server
+
+    Share the application link by pasting it into the provided text box
+
+    Share your server.R and ui.R code on github
+
+
+## How to use the application
+
+With the Iris flower dataset, we plot the differences in Length and Width of the Petal and Sepal of Three Iris Species. 
+
+The application is running on (https://brubru.shinyapps.io/MrPredictor/)
+
+ui.R, and Server.R Code in my github repository (https://github.com/bru-dot-edu/DDP-W4-CourseProject)
+
+## Iris Dataset
+
+The data used in the app comes from the GaltonFamilies dataset. 
+
+```{r summary}
+library(datasets)
+data(iris)
+summary(iris)
+```
+
+## Plot
+In the scatterplot below are represented the data used for plotting
+```{r plot}
+library(datasets)
+data(iris)
+plot(iris)
+```
